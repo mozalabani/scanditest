@@ -1,0 +1,102 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Center the boxes in the container */
+}
+
+.product-item {
+    border: 1px solid #ccc; /* Box border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Space inside the box */
+    width: calc(20% - 20px); /* Four items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #fff; /* Background color */
+    transition: transform 0.2s; /* Smooth scaling effect */
+    outline: none; /* Remove default focus outline */
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-bottom: 20px; /* Space below the buttons */
+}
+
+.button-container button {
+    margin-left: 10px; /* Space between buttons */
+}
+
+
+.product-item:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.product-item:focus {
+    outline: 2px solid #007bff; /* Example focus style */
+}
+
+.product-details {
+    margin-top: 10px; /* Space above product details */
+}
+
+.product-details p {
+    margin: 5px 0; /* Space between text elements */
+    color: #333; /* Darker text color */
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* One item per row on small screens */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Inner padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    text-align: center; /* Center align error messages */
+    margin-bottom: 15px; /* Space below error messages */
+}
+
